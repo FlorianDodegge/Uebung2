@@ -1,15 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 package ac.at.fh_kufstein_U2;
 
-/**
- *
- * @author MacBook
- */
-public class Mensch {
+public class Mensch extends Saeugetier {
+
+    public Mensch(String name, int alter, String geschlecht) {
+        super(name, alter, geschlecht);
+    }
     
+    public String printAll() {
+        return name + " # " + alter + " # " + geschlecht;
+    }
+    
+    public static void main(String[] args) {
+        
+        Mensch m = new Mensch("Florian",26,"männlich");
+        System.out.println(m.printAll());
+    }
 }
