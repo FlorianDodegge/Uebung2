@@ -11,9 +11,4 @@ public class Mensch extends Saeugetier {
         return name + " # " + alter + " # " + geschlecht;
     }
     
-    public static void main(String[] args) {
-        
-        Mensch m = new Mensch("Florian",26,"männlich");
-        System.out.println(m.printAll());
-    }
 }
