@@ -22,7 +22,7 @@ public class Student extends Kind {
         Kind k = new Kind("Florian","Dodegge",26);
         System.out.println(k.Status());
         
-        Student s = new Student(1310653831,"WEB","Florian","Dodegge",26);
-        System.out.println(s.Status());
+        k = new Student(1310653831,"WEB","Florian","Dodegge",26);
+        System.out.println(k.Status());
     }
 }
